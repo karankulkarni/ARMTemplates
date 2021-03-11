@@ -1,0 +1,51 @@
+"resources": [
+    {
+        "condition": "<true-to-deploy-this-resource>",
+        "type": "<resource-provider-namespace/resource-type-name>",
+        "apiVersion": "<api-version-of-resource>",
+        "name": "<name-of-the-resource>",
+        "comments": "<your-reference-notes>",
+        "location": "<location-of-resource>",
+        "dependsOn": [
+            "<array-of-related-resource-names>"
+        ],
+        "tags": {
+            "<tag-name1>": "<tag-value1>",
+            "<tag-name2>": "<tag-value2>"
+        },
+        "sku": {
+            "name": "<sku-name>",
+            "tier": "<sku-tier>",
+            "size": "<sku-size>",
+            "family": "<sku-family>",
+            "capacity": <sku-capacity>
+        },
+        "kind": "<type-of-resource>",
+        "copy": {
+            "name": "<name-of-copy-loop>",
+            "count": <number-of-iterations>,
+            "mode": "<serial-or-parallel>",
+            "batchSize": <number-to-deploy-serially>
+        },
+        "plan": {
+            "name": "<plan-name>",
+            "promotionCode": "<plan-promotion-code>",
+            "publisher": "<plan-publisher>",
+            "product": "<plan-product>",
+            "version": "<plan-version>"
+        },
+        "properties": {
+            "<settings-for-the-resource>",
+            "copy": [
+                {
+                    "name": ,
+                    "count": ,
+                    "input": {}
+                }
+            ]
+        },
+        "resources": [
+            "<array-of-child-resources>"
+        ]
+    }
+  ]
