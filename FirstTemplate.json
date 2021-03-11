@@ -57,7 +57,10 @@
 		}
     },
     "resources": [{
-        "type":"Microsoft.Compute/VirtualMachines"
+        "type":"Microsoft.Compute/VirtualMachines",
+        "apiVersion": "2015-06-15",
+        "name":"[concat(parameters('vmName'),'00000')]"
+        
     }]
     
 }
