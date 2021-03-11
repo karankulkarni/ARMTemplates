@@ -21,27 +21,15 @@
 				"description":"Enter the password"
 			}
 		},
-        "osType": {
+        "OsType": {
             "type": "string",
             "defaultValue":"18.04-LTS",
             "allowedValues": [
-                "12.04.5-LTS",
-                "14.04.5-LTS",
                 "16.04.0-LTS",
                 "18.04-LTS"
             ]
         },
-        "Location": {
-            "type": "string",
-            "defaultValue":"eastus",
-            "allowedValues": [
-                "centralus",
-                "northus"
-            ],
-            "metadata": {
-                "description": "description"
-            }
-        },
+    
         "VMSize":{
             "type": "string",
             "defaultValue":"Standard_A1_v2",
